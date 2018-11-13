@@ -30,6 +30,11 @@ namespace Dealership {
      return Miles;
    }
 
+   // public string CarInfo()
+   // {
+   //   Console.WriteLine("This car is a {0}, with {1} miles on it, and it costs {2}", MakeModel, Miles, Price);
+   // }
+
    public void SetPrice(int newPrice)
    {
      Price = newPrice;
@@ -38,6 +43,11 @@ namespace Dealership {
     public bool WorthBuying(int maxPrice)
     {
       return (Price < maxPrice);
+    }
+
+    public bool MaxMiles(int maxMiles)
+    {
+      return (Miles < maxMiles);
     }
   }
 }
