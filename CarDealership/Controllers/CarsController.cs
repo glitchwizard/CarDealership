@@ -9,12 +9,19 @@ using CarDealership.Models;
 
 namespace CarDealership.Controllers
 {
-    public class CarController : Controller
+    public class CarsController : Controller
     {
-        [HttpGet("/cars")]
+        [HttpGet("/newcar")]
         public IActionResult Index()
         {
             return View();
         }
+
+        [HttpPost("/newCar")]
+        public IActionResult Create()
+        {
+
+        }
+
     }
 }

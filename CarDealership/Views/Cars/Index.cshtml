@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add a new car</title>
+  </head>
+  <body>
+    <h1>Add a new car to the lot</h1>
+
+    <form action="/newCar" method="post">
+            
+      <label for="MakeModel">What make is the car?</label>
+      <input id="MakeModel"type="text" name="MakeModel"><br>
+            
+      <label for="Price">What's the price of the car?'</label>
+      <input id="Price"type="number" name="Price"><br>
+           
+      <label for="Miles">How many miles are on the car?</label>
+      <input id="Miles"type="number" name="Miles"><br>
+            
+      <button type="submit" >Submit</button>
+            
+    </form>
+
+  </body>
+</html>
