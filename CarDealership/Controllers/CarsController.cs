@@ -18,9 +18,10 @@ namespace CarDealership.Controllers
         }
 
         [HttpPost("/newCar")]
-        public IActionResult Create()
+        public IActionResult Create(string makeModel, int price, int miles)
         {
-
+            Car newCar = new Car(makeModel, price, miles);
+            return RedirectToAction("Index");
         }
 
     }

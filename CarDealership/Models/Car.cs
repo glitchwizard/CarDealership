@@ -5,15 +5,18 @@ namespace CarDealership.Models
 
     public class Car
     {
-        private string MakeModel;
-        private int Price;
-        private int Miles;
+        private string _makeModel;
+        private int _price;
+        private int _miles;
+        private static List<Car> carList = new List<Car> {};
 
         public Car(string makeModel, int price, int miles)
         {
-            MakeModel = makeModel;
-            Price = price;
-            Miles = miles;
+            _makeModel = makeModel;
+            _price = price;
+            _miles = miles;
+            _carList.Add(this);
+
         }
 
         public Car ()
@@ -23,32 +26,32 @@ namespace CarDealership.Models
 
         public string GetMakeModel()
         {
-            return MakeModel;
+            return _makeModel;
         }
 
         public int GetPrice()
         {
-            return Price;
+            return _price;
         }
 
         public int GetMiles()
         {
-            return Miles;
+            return _miles;
         }
 
         public void SetPrice(int newPrice)
         {
-            Price = newPrice;
+            _price = newPrice;
         }
 
         public bool WorthBuying(int maxPrice)
         {
-            return (Price < maxPrice);
+            return (_price < maxPrice);
         }
 
         public bool MaxMiles(int maxMiles)
         {
-            return (Miles < maxMiles);
+            return (_miles < maxMiles);
         }
     }
 }
