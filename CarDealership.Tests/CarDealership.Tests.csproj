@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
@@ -16,6 +16,7 @@
     <Folder Include="ModelTests\" />
     <Folder Include="ControllerTests\" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\CarDealership\CarDealership.csproj" />
   </ItemGroup>

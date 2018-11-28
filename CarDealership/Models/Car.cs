@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace CarDealership.Models
 {
@@ -8,7 +9,7 @@ namespace CarDealership.Models
         private string _makeModel;
         private int _price;
         private int _miles;
-        private static List<Car> carList = new List<Car> {};
+        private static List<Car> _carList = new List<Car> {};
 
         public Car(string makeModel, int price, int miles)
         {
